@@ -4,6 +4,7 @@ main,
 footer {
     border: 1px solid navy;
     scroll-behavior: smooth;
+
 }
 
 /* Reset */
@@ -28,6 +29,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: white
+}
+
+nav {
+    color: white;
 }
 
 header,
