@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: silver;
 
 }
 
@@ -33,6 +34,7 @@ header {
 .navlinks {
     color: white;
     justify-content: space-between;
+    display: flex;
 }
 
 header,
@@ -74,7 +76,7 @@ main {
 }
 
 .profile {
-    width: 25%;
+    width: 15%;
 }
 
 .github-logo {
@@ -82,7 +84,14 @@ main {
 }
 
 .about {
-    justify-content: right;
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
 }
 
 /* How do i add a background color to everything but the header? */
