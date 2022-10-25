@@ -22,6 +22,7 @@ body {
     height: 100vh;
 }
 
+
 img {
     width: 100%;
 }
@@ -38,6 +39,7 @@ header {
 
 .navlinks {
     color: white;
+    justify-content: space-between;
 }
 
 header,
@@ -65,4 +67,21 @@ main {
 
 .challenge-1 {
     width: 25%;
+}
+
+.contact {
+    margin-top: 50px;
+
+}
+
+.explanation {
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 25%;
+}
+
+.github-logo {
+    width: 5%
 }
