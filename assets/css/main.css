@@ -1,11 +1,4 @@
 /* Wire Frame: TODO delete later*/
-header,
-main,
-footer {
-    border: 1px solid navy;
-    scroll-behavior: smooth;
-
-}
 
 /* Reset */
 body {
@@ -46,10 +39,12 @@ header,
 main,
 footer {
     padding: 1.5rem;
+    border: 1px solid navy;
 }
 
 main {
     flex-grow: 1;
+    scroll-behavior: smooth;
 }
 
 
@@ -85,3 +80,9 @@ main {
 .github-logo {
     width: 5%
 }
+
+.about {
+    justify-content: right;
+}
+
+/* How do i add a background color to everything but the header? */
