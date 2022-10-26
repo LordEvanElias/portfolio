@@ -53,6 +53,7 @@ main {
 
 
 
+
 /* Classes */
 .mt- {
     margin-top: 0.75rem;
@@ -94,4 +95,8 @@ main {
     text-decoration: none;
 }
 
-/* How do i add a background color to everything but the header? */
+.github-logo:hover {
+    background-color: #3892;
+    color: white;
+    box-shadow: 24px;
+}
