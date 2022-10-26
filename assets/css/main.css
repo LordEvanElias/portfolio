@@ -12,7 +12,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: fantasy;
     height: 100vh;
 }
 
@@ -21,6 +21,7 @@ img {
     width: 100%;
 }
 
+/* Make header a solid color or gradient. Black is good. */
 header {
     background: url('./../images/Header\ Background.jpg');
     background-repeat: no-repeat;
