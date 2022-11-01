@@ -1,12 +1,5 @@
-/* Wire Frame: TODO delete later*/
+/* Variables */
 
-/* Reset */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: silver;
-
-}
 
 /* Element Selectors  */
 body {
@@ -14,16 +7,17 @@ body {
     flex-direction: column;
     font-family: fantasy;
     height: 100vh;
+    background-color: silver;
 }
 
 
 img {
-    width: 100%;
+    height: 300px;
+    width: 300px;
 }
 
-/* Make header a solid color or gradient. Black is good. */
 header {
-    background: url('./../images/Header\ Background.jpg');
+    background-image: linear-gradient(black, grey);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -32,72 +26,102 @@ header {
     color: white
 }
 
-.navlinks {
-    color: white;
-    justify-content: space-between;
-    display: flex;
-}
-
-header,
-main,
-footer {
-    padding: 1.5rem;
-    border: 1px solid navy;
+h2 {
+    text-align: center;
 }
 
 main {
+    font-size: 1.5rem;
     flex-grow: 1;
     scroll-behavior: smooth;
+    flex-wrap: wrap;
+
 }
 
+footer {
+    padding: 1.5rem;
+    border: 1px solid navy;
+    background-image: linear-gradient(darkgrey, #888);
+}
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
 
-
-
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
 
 /* Classes */
-.mt- {
-    margin-top: 0.75rem;
+
+.link {
+    color: white;
+    justify-content: space-around;
+    border: solid white;
+    border-radius: 6px;
+    padding: 2px;
+
 }
 
-.pt {
-    padding-top: 1.5rem;
+.link:hover {
+    color: goldenrod;
+    animation: glow 1s ease-in-out infinite;
+    font-size: 1.75rem;
 }
 
-.challenge-1 {
-    width: 25%;
-}
-
+.about,
+.work,
+.github,
 .contact {
-    margin-top: 50px;
-
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
+
+
+
 
 .explanation {
-    flex-wrap: wrap;
-}
+    border: 2px solid black;
+    margin: 1rem;
+    word-wrap: normal;
 
-.profile {
-    width: 15%;
-}
-
-.github-logo {
-    width: 5%
-}
-
-.about {
-    display: flex;
-    gap: 1rem;
 }
 
 .link {
     margin: 0 1rem;
     color: white;
     text-decoration: none;
+    font: italic;
 }
 
 .github-logo:hover {
     background-color: #3892;
     color: white;
     box-shadow: 24px;
+
+}
+
+.navlinks {
+    display: flex;
+
+}
+
+.wrapper {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add a media querey for greater than 1000px through change.wrapper to flex-direction:row */
+
+@media (min-width: 1000px) {
+    .wrapper {
+        flex-direction: row;
+    }
 }

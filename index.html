@@ -12,59 +12,71 @@
 
 <body>
     <!-- Header -->
+
     <header>
-        <!-- Turn links into buttons perhaps. -->
+
         <h1>Evan Elias</h1>
+
+        <!-- Nav Bar -->
+
         <nav class="navlinks">
             <a class="link" href="#about">About</a>
             <a class="link" href="#work">Work</a>
             <a class="link" href="#contact">Contact</a>
-            <!-- Would also like to remove underline and italicise them.-->
+            <a class="link" href=" #resume">Resume</a>
+
         </nav>
 
     </header>
 
     <main>
-        <section id="about" class="about">
-            <!-- Add picture or avatar and more bio. -->
-            <div class="profile">
-                <img src="./assets/images/Profile Icon.jpg" alt="Profile Image">
-            </div>
-            <div>
-                <h2>About Evan</h2>
-                <p> I love reading, writing, traveling, and playing video games.</p>
-            </div>
+        <div class="wrapper">
+            <section class="about">
 
-        </section>
-        <!-- Add more spacing between sectons. (Maybe a margin top in the contact) -->
-        <section id="work">
-            <h2>Work</h2>
-            <h3> Homework 1</h3>
-            <div class="challenge-1">
-                <a href="https://lordevanelias.github.io/challenge-1/">
-                    <img src="./assets/images/digital-marketing-meeting.jpg" alt="Horiseon">
-                </a>
-            </div class="explanation">
-            <!-- Add links to the images. Also make the length below the images to be the same lenth as the image. -->
-            <!-- Add four placeholder boxes. Make smaller than the challenge 1  (optional)-->
-            <p> The first homework from bootcamp. I needed to make it more semantic and fix some bugs to look like this.
-            </p>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="contact">
-                <h2>Github</h2>
-                <a href="https://github.com/LordEvanElias">
-                    <div class="github-logo">
-                        <img src="./assets/images/Github Logo.png" alt="github logo">
-                </a>
-            </div>
-            </div>
-            <section id="resume">
-                <!-- Put a resume here. -->
+                <!-- Add picture or avatar and more bio. -->
+
+                <div class="profile">
+                    <img src="./assets/images/Profile Icon.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <h2>About Evan</h2>
+                    <p class="explanation"> I love reading, writing, traveling, and playing video games.</p>
+                </div>
+
             </section>
 
-            <!-- Style these links! -->
+            <section class="work">
+                <div class="challenge-1">
+                    <a href="https://lordevanelias.github.io/challenge-1/">
+                        <img src="./assets/images/digital-marketing-meeting.jpg" alt="Horiseon">
+                    </a>
+                    <h2>Work: Bootcamp HW 1</h2>
+                </div>
+                <!-- Add links to the images. Also make the length below the images to be the same lenth as the image. -->
+                <!-- Add four placeholder boxes. Make smaller than the challenge 1  (optional)-->
+                <p class="explanation"> The first homework from bootcamp. I needed to make it more semantic and fix some
+                    bugs. Click the photo to see the end product.
+                </p>
+
+            </section>
+            <section class="github">
+                <div class="contact">
+                    <a href="https://github.com/LordEvanElias">
+                        <div class="github-logo">
+                            <img src="./assets/images/Github Logo.png" alt="github logo">
+                    </a>
+                </div>
+                <h2>Github</h2>
+
+
+
+                <!-- Style these links! -->
+            </section>
+        </div>
+
+        <section class="resume">
+            <!-- Put a resume here. -->
+            <img src="./assets/files/resume" alt="Resume">
         </section>
     </main>
 
