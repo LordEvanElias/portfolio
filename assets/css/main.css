@@ -6,7 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: fantasy;
+    font-family: Fantasy, Arial, Helvetica, sans-serif;
     height: 100vh;
     background-color: silver;
 }
