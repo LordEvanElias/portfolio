@@ -2,6 +2,7 @@
 
 
 /* Element Selectors  */
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,10 +11,14 @@ body {
     background-color: silver;
 }
 
+footer {
+    padding: 1.5rem;
+    border: 1px solid navy;
+    background-image: linear-gradient(darkgrey, #888);
+}
 
-img {
-    height: 300px;
-    width: 300px;
+h2 {
+    text-align: center;
 }
 
 header {
@@ -26,8 +31,9 @@ header {
     color: white
 }
 
-h2 {
-    text-align: center;
+img {
+    height: 300px;
+    width: 300px;
 }
 
 main {
@@ -38,38 +44,7 @@ main {
 
 }
 
-footer {
-    padding: 1.5rem;
-    border: 1px solid navy;
-    background-image: linear-gradient(darkgrey, #888);
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
-
 /* Classes */
-
-.link {
-    color: white;
-    justify-content: space-around;
-    border: solid white;
-    border-radius: 6px;
-    padding: 2px;
-
-}
-
-.link:hover {
-    color: goldenrod;
-    animation: glow 1s ease-in-out infinite;
-    font-size: 1.75rem;
-}
 
 .about,
 .work,
@@ -82,21 +57,12 @@ footer {
     padding: 20px;
 }
 
-
-
-
 .explanation {
     border: 2px solid black;
     margin: 1rem;
     word-wrap: normal;
+    padding: 6px;
 
-}
-
-.link {
-    margin: 0 1rem;
-    color: white;
-    text-decoration: none;
-    font: italic;
 }
 
 .github-logo:hover {
@@ -104,6 +70,24 @@ footer {
     color: white;
     box-shadow: 24px;
 
+}
+
+.link {
+    color: white;
+    justify-content: space-around;
+    border: solid white;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 0 1rem;
+    text-decoration: none;
+    font: italic;
+
+}
+
+.link:hover {
+    color: goldenrod;
+    animation: glow 1s ease-in-out infinite;
+    font-size: 1.75rem;
 }
 
 .navlinks {
@@ -118,7 +102,17 @@ footer {
     flex-direction: column;
 }
 
-/* Add a media querey for greater than 1000px through change.wrapper to flex-direction:row */
+/* Media Quereries   */
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
 
 @media (min-width: 1000px) {
     .wrapper {
